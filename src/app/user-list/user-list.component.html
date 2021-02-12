@@ -1,0 +1,8 @@
+
+
+        <h2>Users :</h2>
+        <ul class="list-group">
+        <app-user *ngFor="let user of users" [firstname]='user.firstname' [lastname]='user.lastname' [email]='user.email' [preferedDrink]='user.preferedDrink' [hobbies]='user.hobbies'></app-user>
+        
+        </ul>
+        <a routerLink="/new-user"><button class="btn btn-success">Ajouter un utilisateur</button></a>

@@ -1,0 +1,15 @@
+<li [ngClass]="{'list-group-item':true}">
+
+    <div class="row">
+        <div class="col-md-8"><h3> {{firstname}} {{lastname}} </h3></div>
+      </div>
+        
+      <p>Boisson préférée : {{preferedDrink}}</p>
+      <p>Email : {{email}}</p>
+
+      <div *ngIf ='hobbies && hobbies.length > 1'>  Hobbies : <div  *ngFor = 'let hobbi of hobbies'>- * {{hobbi}}  </div></div>
+        
+    </li>
+           
+    
+    
